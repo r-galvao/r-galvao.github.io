@@ -1,0 +1,67 @@
+/* Define o estilo para todo o corpo do documento */
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+
+/* Define o estilo para a barra lateral */
+#sidebar {
+    width: 200px;
+}
+
+/* Define o estilo para a lista na barra lateral */
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Define o estilo para os links na lista da barra lateral */
+#sidebar ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Define o estilo para o conteúdo principal */
+#content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Define o estilo para os campos de entrada de texto no formulário */
+#content form input[type="text"] {
+    width: 100%; /* Define a largura dos campos de entrada de texto como 100% */
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Define o estilo para as áreas de texto no formulário */
+#content form textarea {
+    width: 100%; /* Define a largura das áreas de texto como 100% */
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Define o estilo para os parágrafos no conteúdo principal */
+#content p {
+    margin-bottom: 20px;
+}
+
+/* Define o estilo para o logotipo */
+#logo {
+    width: 60px;
+    height: auto;
+    display: none;
+    width: 100%;
+}
+
+/* Define o estilo para o logotipo quando a largura da janela do navegador é de pelo menos 600px */
+@media (min-width: 600px) {
+    #logo {
+        display: block;
+    }
+}

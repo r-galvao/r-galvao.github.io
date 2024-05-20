@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Título da página -->
+    <title>Rafael Galvão - Contato</title>
+    <!-- Link para o arquivo de estilo CSS -->
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <!-- Barra lateral com logo e menu de navegação -->
+    <div id="sidebar">
+        <!-- Logo da empresa -->
+        <img id="logo" src="logo.png" alt="Logo">
+        <!-- Menu de navegação -->
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </div>
+    <!-- Conteúdo principal da página -->
+    <div id="content">
+        <!-- Título da página de contato -->
+        <h1>Contato</h1>
+        <!-- Informações de contato -->
+        <p>Nome: Rafael Galvão dos Santos</p>
+        <p>Telefone: (42) 99930-0362</p>
+        <p>Email: r.galvao.rgs@gmail.com</p>
+        <p>Linkedin: <a href="https://www.linkedin.com/in/rafael-galv%C3%A3o-989600119/" target="_blank">Linkedin</a></p>
+        <!-- Espaço em branco -->
+        <br>
+        <br>
+        <!-- Formulário de contato -->
+        <p>Caso deseje entrar em contato diretamente por aqui. Preencha os dados abaixo, que retornarei assim que possível.</p>
+        <form action="/submit_form" method="post">
+            <div style="width: 100%;">
+                <!-- Campo para o nome do usuário -->
+                <div style="margin-bottom: 10px;">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome"><br>
+                </div>
+                <!-- Campo para o telefone do usuário -->
+                <div style="margin-bottom: 10px;">
+                    <label for="telefone">Telefone:</label><br>
+                    <input type="text" id="telefone" name="telefone"><br>
+                </div>
+                <!-- Campo para a mensagem do usuário -->
+                <div style="margin-bottom: 10px;">
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea id="mensagem" name="mensagem"></textarea><br>
+                </div>
+                <!-- Botão de envio do formulário -->
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
